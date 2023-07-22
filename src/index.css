@@ -7,9 +7,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 1px #484848;
+    }
+    .dark-font-outline-2 {
+        -webkit-text-stroke: 1px #949393;
+      }
+    .font-outline-4 {
+      -webkit-text-stroke: 4px #484848;
+    }
+  }
+
 .popup { animation: popup 0.3s; }
 @keyframes popup {
     0% { transform: scale(0.2); }
     100% { transform: scale(1); }
   }
+
+.slide-in { 
+  animation: slide-in 0.3s;
+}
+@keyframes slide-in {
+  0%{
+    transform: translate3d(100% , 0 , 0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
+
   
