@@ -28,6 +28,9 @@
 .slide-in { 
   animation: slide-in 0.3s;
 }
+.slide-in-inv { 
+  animation: slide-in-inv 0.5s;
+}
 @keyframes slide-in {
   0%{
     transform: translate3d(100% , 0 , 0);
@@ -37,4 +40,13 @@
   }
 }
 
+
+@keyframes slide-in-inv {
+  0%{
+    transform: translate3d(-100% , 0 , 0);
+  }
+  100%{
+    transform: translate3d(0,0,0);
+  }
+}
   

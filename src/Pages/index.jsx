@@ -7,6 +7,7 @@ import Features from '../components/mainpage/Features'
 import Testimonial from '../components/mainpage/testimonial'
 import Subscribe from '../components/mainpage/Subscribe'
 import Footer from '../components/common/footer'
+import CartButton from '../components/common/CartButton'
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
           <FollowUs/>
           <Testimonial/>
           <Subscribe/>
+          <CartButton/>
           <Footer/>
       </div>
   )
