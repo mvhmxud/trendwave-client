@@ -1,71 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../common/Button";
 import ListofFilters from "../common/ListofFilters";
 import CardsList from "../common/CardsList";
-
+import {useSelector , useDispatch} from 'react-redux'
+import { getProducts } from "../../store/features/ProductsSlice";
+import {ThreeDots} from 'react-loader-spinner'
+import { useNavigate } from "react-router-dom";
 const NewArrivals = () => {
-  const [selected , setSelected] = useState(null)
-  const SelectFilterHandler=(filter)=>{
-    setSelected(filter)
-  }
-  const productCards = [
-    {
-      title: "Shiny Dress",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img :"https://i.ibb.co/sH44NbQ/prod1.png",
-      availability: "Almost Sold Out"
-    },
-    {
-      title: "Long Dress",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img:"https://i.ibb.co/SNbtFN7/prod2.png",
-      availability: "Almost Sold Out"
-    },
-    {
-      title: "Full Sweater",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img:"https://i.ibb.co/drM6mj0/prod3.png",
-      availability: "Almost Sold Out"
-    },
-    {
-      title: "White Dress",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img:"https://i.ibb.co/6HW8N49/prod4.png",
-      availability: "Almost Sold Out"
-    },
-    {
-      title: "Colorful Dress",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img:"https://i.ibb.co/8Pkjpcp/prod5.png",
-      availability: "Almost Sold Out"
-    },
-    {
-      title: "White Shirt",
-      by: "Al Karam",
-      customerReviews: "(4.1k) Customer Reviews",
-      price: "$95.50",
-      img :"https://i.ibb.co/4Rg1gSK/prod6.png",
-      availability: "Almost Sold Out"
-    }
-  ];
-  
-  const FilterList = [
-    "Men's Fashion",
-    "Women's Fashion",
-    "Men Accessories",
-    "Women Accessories",
-    "Discount Deals",
-  ];
+  const navigate = useNavigate()
+  const {loading , Filter  , products } = useSelector(state=>state.products)
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getProducts({page : 1 , cat : Filter || null}))
+  },[Filter])
+
   return (
     <div className="w-[80%] lg:w-[66.66%] lg:my-12 flex gap-5 flex-col items-center ">
       <div className="flex flex-col gap-1 items-center">
@@ -75,11 +23,14 @@ const NewArrivals = () => {
           voluptas, nihil deleniti accusamus?
         </p>
       </div>
-      <ListofFilters selected={selected} list={FilterList} handler={SelectFilterHandler}/>
-      <CardsList cards={productCards}/>
-      <div>
-        <Button className="w-44" text={'View More'} w={44} />
-      </div>
+      <ListofFilters />
+      {loading && <div className="w-full grid h-60 items-center">
+          <ThreeDots color="grey" wrapperClass="w-[20%] mx-auto" />
+        </div>}
+      {!loading && <CardsList cards={products.slice(0 ,6)}/>}
+      {!loading && <div>
+        {loading &&<Button handler={()=>navigate("/products")} className="w-44" text={'View More'} w={44} />}
+      </div>}
     </div>
   );
 };

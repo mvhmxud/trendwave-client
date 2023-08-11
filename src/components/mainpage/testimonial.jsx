@@ -22,13 +22,13 @@ const Testimonial = () => {
         <div className="relative w-[90%] lg:w-[70%]  flex justify-center text-white mt-12">
           <div className="w-[33.33%] gap-7 min-h-32 bg-white dark:bg-zinc-900 shadow-lg rounded-md flex flex-col lg:flex-row  items-center p-3">
             <div className="h-full grid place-content-center">
-                <img className="w-[100%]" src={test2} alt />
+                <img className="w-[100%]" src={test2}  />
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-[60%] text-left text-zinc-700 dark:text-zinc-100">{`“Items That I ordered were the best investment I ever made. I can't say enough about your quality service."`}</p>
               <div className="flex text-xs text-yellow-400">
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <AiFillStar />
+                {[1, 2, 3, 4, 5].map((item , index) => (
+                  <AiFillStar key={index} />
                 ))}
               </div>
               <hr className="w-[40%]" />
@@ -40,13 +40,13 @@ const Testimonial = () => {
           </div>
           <div className="w-[33.33%] flex-col lg:flex-row gap-7 min-h-32 bg-white dark:bg-zinc-900 shadow-lg rounded-md scale-125 z-50 flex items-center p-3">
             <div className="h-full grid place-content-center">
-                <img className="w-[100%]" src={test1} alt />
+                <img className="w-[100%]" src={test1}  />
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-[60%] text-left text-zinc-700 dark:text-zinc-100">{`"You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!"`}</p>
               <div className="flex text-xs text-yellow-400">
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <AiFillStar />
+                {[1, 2, 3, 4, 5].map((item , index) => (
+                  <AiFillStar key={index} />
                 ))}
               </div>
               <hr className="w-[40%]" />
@@ -58,13 +58,13 @@ const Testimonial = () => {
           </div>
           <div className="w-[33.33%] flex-col lg:flex-row gap-7 min-h-32 bg-white dark:bg-zinc-900 shadow-lg rounded-md  flex items-center p-3">
             <div className="h-full grid place-content-center">
-                <img className="w-[100%]" src={test3} alt />
+                <img className="w-[100%]" src={test3} />
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-[60%] text-left text-zinc-700 dark:text-zinc-100">{`“Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.”`}</p>
               <div className="flex text-xs text-yellow-400">
-                {[1, 2, 3, 4, 5].map((item) => (
-                  <AiFillStar />
+                {[1, 2, 3, 4, 5].map((item , index) => (
+                  <AiFillStar key={index} />
                 ))}
               </div>
               <hr className="w-[40%]" />

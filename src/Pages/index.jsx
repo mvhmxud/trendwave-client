@@ -9,7 +9,7 @@ import Subscribe from '../components/mainpage/Subscribe'
 import Footer from '../components/common/footer'
 import CartButton from '../components/common/CartButton'
 
-const Index = () => {
+const Index = ({cartHandler}) => {
   return (
     <div className='w-[100vw] min-h-screen relative flex flex-col items-center bg-white dark:bg-zinc-900 transition-colors ease-in-out duration-500'>
           <Navigation/>  
@@ -20,7 +20,7 @@ const Index = () => {
           <FollowUs/>
           <Testimonial/>
           <Subscribe/>
-          <CartButton/>
+          <CartButton cartHandler={cartHandler}/>
           <Footer/>
       </div>
   )

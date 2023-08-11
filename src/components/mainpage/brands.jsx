@@ -7,11 +7,11 @@ import ck from '../../assets/imgs/calvin klein.png'
 const Brands = () => {
   return (
     <div className='flex w-[66.66%] lg:justify-between gap-9 items-center justify-center lg:flex-row  flex-wrap my-8 lg:mt-10 lg:mb-10 overflow-hidden'>
-        <img className='w-[30%] lg:w-[15%]' src={chnl} alt="" />
-        <img className='w-[30%] lg:w-[15%]' src={lv} alt="" />
-        <img className='w-[30%] lg:w-[15%]' src={prada} alt="" />
-        <img className='w-[30%] lg:w-[15%]' src={ck} alt="" />
-        <img className='w-[30%] lg:w-[15%]' src={dnm} alt="" />
+        <img className='w-[30%] lg:w-[15%]' src={chnl} alt="channel" />
+        <img className='w-[30%] lg:w-[15%]' src={lv} alt="louis vuitton" />
+        <img className='w-[30%] lg:w-[15%]' src={prada} alt="prada" />
+        <img className='w-[30%] lg:w-[15%]' src={ck} alt="calvin klein" />
+        <img className='w-[30%] lg:w-[15%]' src={dnm} alt="denim" />
     </div>
   )
 }

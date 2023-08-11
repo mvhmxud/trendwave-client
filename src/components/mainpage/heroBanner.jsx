@@ -24,7 +24,7 @@ const HeroBanner = () => {
             <Button  text={'SHOP NOW'} w={null}   />
         </div>
         <div className="lg:col-start-2 flex items-end justify-center overflow-hidden lg:col-end-3 lg:row-start-5 lg:row-end-6  rounded-lg  bg-[#f49f93]">
-            <img className='w-[90%]' src={img4} alt=''/>
+            <img className='w-[90%]' src={img4} alt='two models'/>
         </div>
         <div className="lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-6 bg-[#E0E0E0] dark:bg-zinc-800 rounded-lg grid items-end place-items-center ">
         <img className='w-[50%]' alt='male model sitting on a chair' src={img2}/>
