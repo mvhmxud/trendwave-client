@@ -41,7 +41,7 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 ## Screenshots
 
 ### Homepage Light Mode
-![Homepage Light Mode](https://i.ibb.co/K9958zs/localhost-5173.png)
+![Homepage Light Mode](https://i.ibb.co/RjHN2vX/localhost-5173.png)
 
 ### Homepage Dark Mode
 ![Homepage Dark Mode](https://i.ibb.co/tb5pYyn/localhost-5173-dark.png)
