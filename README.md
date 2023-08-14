@@ -40,7 +40,17 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 ## Screenshots
 
-Insert screenshots of your TrendWave website to showcase its features and design.
+Here are some screenshots showcasing TrendWave's features and design:
+
+![Homepage Light Mode](https://i.ibb.co/K9958zs/localhost-5173.png)
+![Homepage Dark Mode](https://i.ibb.co/tb5pYyn/localhost-5173-dark.png)
+![Product Listings](https://i.ibb.co/ccQNnt5/localhost-5173-prods.png)
+![Product Details](https://i.ibb.co/tDP7ng7/localhost-5173-product.png)
+![User Profile](https://i.ibb.co/zNYzDx5/localhost-5173-profile.png)
+![Order History](https://i.ibb.co/sqS9m7c/orders.png)
+![Shopping Cart](https://i.ibb.co/hY5QPSj/localhost-5173-cart.png)
+![Checkout](https://i.ibb.co/Dg1X4wR/checkout-stripe-com-c-pay-cs-test-b18-CWJIHvy-TZmd-KThkt-Cxc1-Q9uq0-Fbd-Bpw-F9pvqlz-YUXwh-Bo-XDX5-EJ.png)
+![Checkout Success](https://i.ibb.co/FXjSBJZ/localhost-5173-checkout-success.png)
 
 ## Live Preview
 
