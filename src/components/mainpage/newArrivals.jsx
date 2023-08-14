@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../common/Button";
 import ListofFilters from "../common/ListofFilters";
-import CardsList from "../common/CardsList";
+import CardsList from "../productsPage/CardsList";
 import {useSelector , useDispatch} from 'react-redux'
 import { getProducts } from "../../store/features/ProductsSlice";
 import {ThreeDots} from 'react-loader-spinner'

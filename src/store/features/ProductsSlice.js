@@ -23,6 +23,7 @@ const initialState = {
   cart: {},
   categories: null,
   Filter: null,
+  filterLoading: false,
 };
 
 export const getProducts = createAsyncThunk(
@@ -107,14 +108,14 @@ const ProductSlice = createSlice({
       toast(state.error, { type: "error" });
     });
     builder.addCase(getCategories.pending, (state) => {
-      state.loading = true;
+      state.filterLoading = true;
     });
     builder.addCase(getCategories.fulfilled, (state, action) => {
-      state.loading = false;
+      state.filterLoading = false;
       state.categories = action.payload;
     });
     builder.addCase(getCategories.rejected, (state, action) => {
-      state.loading = false;
+      state.filterLoading = false;
       state.categories = null;
       state.error = action.payload.response.data.message;
     });

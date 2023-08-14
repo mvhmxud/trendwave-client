@@ -4,7 +4,7 @@ import getStripe from "../../utils/getStripe";
 
 const initialState = {
   items: JSON.parse(localStorage.getItem("cartItems")) || [],
-  price: JSON.parse(localStorage.getItem("cartPrice")) || 0,
+  price: +JSON.parse(localStorage.getItem("cartPrice")) || 0,
   loading: false,
   error: false,
   checkout: false,
@@ -53,7 +53,7 @@ const CartSlice = createSlice({
   reducers: {
     emptyCart: (state) => {
       state.items = [];
-      state.price = [];
+      state.price = 0;
       localStorage.setItem("cartItems", JSON.stringify(state.items));
       localStorage.setItem("cartPrice", JSON.stringify(state.price));
     },

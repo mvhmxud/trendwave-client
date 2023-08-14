@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Navigation from "../components/common/navigation";
-import Footer from "../components/common/footer";
-import CartButton from "../components/common/CartButton";
+import Navigation from "../components/ui/navigation";
+import Footer from "../components/ui/footer";
+import CartButton from "../components/cartPage/CartButton";
 import ListofFilters from "../components/common/ListofFilters";
-import CardsList from "../components/common/CardsList";
+import CardsList from "../components/productsPage/CardsList";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts, setFilter } from "../store/features/ProductsSlice";
 import { ThreeDots } from "react-loader-spinner";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import Pagination from "../components/common/Pagination";
+import Pagination from "../components/productsPage/Pagination";
 import { TbError404 } from "react-icons/tb";
 const Products = ({ cartHandler }) => {
   const [p, setP] = useSearchParams();
@@ -18,15 +18,18 @@ const Products = ({ cartHandler }) => {
   );
   const dispatch = useDispatch();
 
-  const [selected, setSelected] = useState("All");
   
-  
+  useEffect(()=>{    
+      setP({p:1})
+      dispatch(getProducts({page : 1 , cat : Filter}));
+  },[Filter])
+
   useEffect(() => {
     if (+p.get("p") > totalNumberOfPages) {
       navigate("/products");
     }
     dispatch(getProducts({page : +p.get("p") || 1 , cat : Filter}));
-  }, [p , Filter]);
+  }, [p]);
   
   
   return (

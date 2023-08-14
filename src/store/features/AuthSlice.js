@@ -15,6 +15,7 @@ const checkExp = (token) => {
   }
 };
 
+
 const initialState = {
   token: checkExp(localStorage.getItem("jwt")) || null,
   user: checkExp(localStorage.getItem("jwt"))
@@ -24,7 +25,30 @@ const initialState = {
   loading: false,
   error: "",
   registered: false,
+  userOrders : []
 };
+
+export const updateUser = createAsyncThunk(
+  "updateUser",
+  (data, { rejectWithValue, getState }) => {
+    const state = getState().auth;
+    const headers = {
+      Authorization: "Bearer " + state.token,
+    };
+    console.log(headers);
+    return axios
+      .put("http://localhost:5000/users/update", data, { headers: headers })
+      .then((res) => res.data)
+      .catch((err) => rejectWithValue(err));
+  }
+);
+
+export const getUserOrders = createAsyncThunk('/getOrders' , (args,{rejectWithValue , getState})=>{
+  const headers  = {Authorization : "Bearer " +getState().auth.token}
+  return axios.get('http://localhost:5000/products/orders' , {
+    headers : headers 
+  }).then(res=>res.data.orders).catch(err=> rejectWithValue(err));
+})
 
 export const signup = createAsyncThunk(
   "signUp",
@@ -110,6 +134,36 @@ const AuthSlice = createSlice({
       state.error = action.payload.response.data.message;
       toast(state.error, { type: "error" });
     });
+    builder.addCase(updateUser.pending, (state) => {
+      state.loading = true;
+    });
+    builder.addCase(updateUser.fulfilled, (state, action) => {
+      toast(action.payload.message, {
+        type: "success",
+        autoClose: 1000,
+      });
+      state.user = action.payload.user
+      state.loading = false;
+    });
+    builder.addCase(updateUser.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.payload.response.data.message;
+      toast(state.error, { type: "error" });
+    });
+    builder.addCase(getUserOrders.pending , (state)=>{
+      state.loading = true
+      state.userOrders = []
+    })
+    builder.addCase(getUserOrders.fulfilled , (state , action) => {
+      state.loading = false 
+      state.userOrders = action.payload
+      state.error = ''
+    })
+    builder.addCase(getUserOrders.rejected , (state, action) => {
+      state.loading = false
+      state.userOrders = []
+      toast.error(action.payload.response.data.message)
+    })
   },
 });
 

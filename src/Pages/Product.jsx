@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Navigation from "../components/common/navigation";
-import Footer from "../components/common/footer";
-import CartButton from "../components/common/CartButton";
+import Navigation from "../components/ui/navigation";
+import Footer from "../components/ui/footer";
+import CartButton from "../components/cartPage/CartButton";
 import Button from "../components/common/Button";
 import {useSelector , useDispatch} from 'react-redux'
 import { getProduct } from "../store/features/ProductsSlice";

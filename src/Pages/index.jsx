@@ -1,13 +1,13 @@
-import Navigation from '../components/common/navigation'
-import HeroBanner from '../components/mainpage/heroBanner'
-import Brands from '../components/mainpage/brands'
-import NewArrivals from '../components/mainpage/newArrivals'
-import FollowUs from '../components/mainpage/FollowUs'
-import Features from '../components/mainpage/Features'
-import Testimonial from '../components/mainpage/testimonial'
-import Subscribe from '../components/mainpage/Subscribe'
-import Footer from '../components/common/footer'
-import CartButton from '../components/common/CartButton'
+import Navigation from '../components/ui/navigation'
+import HeroBanner from '../components/mainPage/heroBanner'
+import Brands from '../components/mainPage/brands'
+import NewArrivals from '../components/mainPage/newArrivals'
+import FollowUs from '../components/mainPage/FollowUs'
+import Features from '../components/mainPage/Features'
+import Testimonial from '../components/mainPage/testimonial'
+import Subscribe from '../components/mainPage/Subscribe'
+import Footer from '../components/ui/footer'
+import CartButton from '../components/cartPage/CartButton'
 
 const Index = ({cartHandler}) => {
   return (

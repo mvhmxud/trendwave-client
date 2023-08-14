@@ -1,7 +1,7 @@
 import React , {useEffect} from "react";
-import Navigation from "../components/common/navigation";
-import Footer from "../components/common/footer";
-import CartItem from "../components/common/cartItem";
+import Navigation from "../components/ui/navigation";
+import Footer from "../components/ui/footer";
+import CartItem from "../components/cartPage/cartItem";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -39,6 +39,7 @@ const Cart = () => {
             )}
             {items?.map((item) => (
               <CartItem
+                key={item._id}
                 _id={item._id}
                 title={item.title}
                 quantity={item.qty}

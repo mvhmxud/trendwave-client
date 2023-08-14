@@ -25,3 +25,15 @@ export const signUpSchema = yup.object().shape({
   confirmPassword: yup.string().oneOf([yup.ref('password')], "password dosn't match").required("Required"),
   agreeToTerms : yup.boolean().oneOf([true],'You must agree to the terms and conditions')
 });
+
+export const editSchema = yup.object().shape({
+  email: yup.string().email("Please enter a vaild email").required("Required"),
+  name: yup
+  .string()
+  .min(6, "must be at least 6 characters")
+  .required("Required"),
+  address: yup
+    .string()
+    .min(6, "must be at least 6 characters")
+    .required("required"),
+})
