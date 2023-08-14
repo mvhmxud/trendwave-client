@@ -40,17 +40,17 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 ## Screenshots
 
-Here are some screenshots showcasing TrendWave's features and design:
-
-![Homepage Light Mode](https://i.ibb.co/K9958zs/localhost-5173.png)
-![Homepage Dark Mode](https://i.ibb.co/tb5pYyn/localhost-5173-dark.png)
-![Product Listings](https://i.ibb.co/ccQNnt5/localhost-5173-prods.png)
-![Product Details](https://i.ibb.co/tDP7ng7/localhost-5173-product.png)
-![User Profile](https://i.ibb.co/zNYzDx5/localhost-5173-profile.png)
-![Order History](https://i.ibb.co/sqS9m7c/orders.png)
-![Shopping Cart](https://i.ibb.co/hY5QPSj/localhost-5173-cart.png)
-![Checkout](https://i.ibb.co/Dg1X4wR/checkout-stripe-com-c-pay-cs-test-b18-CWJIHvy-TZmd-KThkt-Cxc1-Q9uq0-Fbd-Bpw-F9pvqlz-YUXwh-Bo-XDX5-EJ.png)
-![Checkout Success](https://i.ibb.co/FXjSBJZ/localhost-5173-checkout-success.png)
+<p align="center">
+  <img src="https://i.ibb.co/K9958zs/localhost-5173.png" alt="Homepage Light Mode" width="400">
+  <img src="https://i.ibb.co/tb5pYyn/localhost-5173-dark.png" alt="Homepage Dark Mode" width="400">
+  <img src="https://i.ibb.co/ccQNnt5/localhost-5173-prods.png" alt="Product Listings" width="400">
+  <img src="https://i.ibb.co/tDP7ng7/localhost-5173-product.png" alt="Product Details" width="400">
+  <img src="https://i.ibb.co/zNYzDx5/localhost-5173-profile.png" alt="User Profile" width="400">
+  <img src="https://i.ibb.co/sqS9m7c/orders.png" alt="Order History" width="400">
+  <img src="https://i.ibb.co/hY5QPSj/localhost-5173-cart.png" alt="Shopping Cart" width="400">
+  <img src="https://i.ibb.co/Dg1X4wR/checkout-stripe-com-c-pay-cs-test-b18-CWJIHvy-TZmd-KThkt-Cxc1-Q9uq0-Fbd-Bpw-F9pvqlz-YUXwh-Bo-XDX5-EJ.png" alt="Checkout" width="400">
+  <img src="https://i.ibb.co/FXjSBJZ/localhost-5173-checkout-success.png" alt="Checkout Success" width="400">
+</p>
 
 ## Live Preview
 
