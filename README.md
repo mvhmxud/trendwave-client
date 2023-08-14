@@ -40,32 +40,50 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 ## Screenshots
 
-### Homepage Light Mode
-![Homepage Light Mode](https://i.ibb.co/RjHN2vX/localhost-5173.png)
+<div align="center">
+  <p><strong>Homepage Light Mode</strong></p>
+  <img src="https://i.ibb.co/K9958zs/localhost-5173.png" alt="Homepage Light Mode" width="600">
+</div>
 
-### Homepage Dark Mode
-![Homepage Dark Mode](https://i.ibb.co/TMj66Fk/localhost-5173-dark.png)
+<div align="center">
+  <p><strong>Homepage Dark Mode</strong></p>
+  <img src="https://i.ibb.co/tb5pYyn/localhost-5173-dark.png" alt="Homepage Dark Mode" width="600">
+</div>
 
-### Product Listings
-![Product Listings](https://i.ibb.co/ccQNnt5/localhost-5173-prods.png)
+<div align="center">
+  <p><strong>Product Listings</strong></p>
+  <img src="https://i.ibb.co/ccQNnt5/localhost-5173-prods.png" alt="Product Listings" width="600">
+</div>
 
-### Product Details
-![Product Details](https://i.ibb.co/tDP7ng7/localhost-5173-product.png)
+<div align="center">
+  <p><strong>Product Details</strong></p>
+  <img src="https://i.ibb.co/tDP7ng7/localhost-5173-product.png" alt="Product Details" width="600">
+</div>
 
-### User Profile
-![User Profile](https://i.ibb.co/zNYzDx5/localhost-5173-profile.png)
+<div align="center">
+  <p><strong>User Profile</strong></p>
+  <img src="https://i.ibb.co/zNYzDx5/localhost-5173-profile.png" alt="User Profile" width="600">
+</div>
 
-### Order History
-![Order History](https://i.ibb.co/hmrSYgJ/localhost-5173-1.png)
+<div align="center">
+  <p><strong>Order History</strong></p>
+  <img src="https://i.ibb.co/sqS9m7c/orders.png" alt="Order History" width="600">
+</div>
 
-### Shopping Cart
-![Shopping Cart](https://i.ibb.co/hY5QPSj/localhost-5173-cart.png)
+<div align="center">
+  <p><strong>Shopping Cart</strong></p>
+  <img src="https://i.ibb.co/hY5QPSj/localhost-5173-cart.png" alt="Shopping Cart" width="600">
+</div>
 
-### Checkout
-![Checkout](https://i.ibb.co/NsZwLcC/checkout-stripe-com-c-pay-cs-test-a1-Pv-L5d2d-KZJq-URMZazcd5a-Pu-If1s7y-F79mi-K9i-IFSGUv-Im93-Zv02-G.png)
+<div align="center">
+  <p><strong>Checkout</strong></p>
+  <img src="https://i.ibb.co/Dg1X4wR/checkout-stripe-com-c-pay-cs-test-b18-CWJIHvy-TZmd-KThkt-Cxc1-Q9uq0-Fbd-Bpw-F9pvqlz-YUXwh-Bo-XDX5-EJ.png" alt="Checkout" width="600">
+</div>
 
-### Checkout Success
-![Checkout Success](https://i.ibb.co/1KRM6Y2/localhost-5173-checkout-success-1.png)
+<div align="center">
+  <p><strong>Checkout Success</strong></p>
+  <img src="https://i.ibb.co/FXjSBJZ/localhost-5173-checkout-success.png" alt="Checkout Success" width="600">
+</div>
 
 ## Live Preview
 
