@@ -7,7 +7,7 @@ const ProductCard = ({product}) => {
   return (
     <div onClick={navigate.bind(this , `/products/${product._id}`)} className=' cursor-pointer flex gap-2 flex-col justify-between p-4 w-[80%] lg:w-[30%] rounded-lg bg-zinc-50 dark:bg-zinc-800'>
         <div className='w-full h-[70%] '>
-        <img className='aspect-auto h-[100%] rounded-lg' src={`http://localhost:5000/${product?.images[0] }`}  />
+        <img className='aspect-auto h-[100%] rounded-lg' src={`${import.meta.env.VITE_BASE_URL+product?.images[0]}`}  />
         </div>
     
         <div className='flex justify-between'>

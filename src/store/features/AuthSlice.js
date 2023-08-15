@@ -37,7 +37,7 @@ export const updateUser = createAsyncThunk(
     };
     console.log(headers);
     return axios
-      .put("http://localhost:5000/users/update", data, { headers: headers })
+      .put(`${import.meta.env.VITE_BASE_URL}/users/update`, data, { headers: headers })
       .then((res) => res.data)
       .catch((err) => rejectWithValue(err));
   }
@@ -45,7 +45,7 @@ export const updateUser = createAsyncThunk(
 
 export const getUserOrders = createAsyncThunk('/getOrders' , (args,{rejectWithValue , getState})=>{
   const headers  = {Authorization : "Bearer " +getState().auth.token}
-  return axios.get('http://localhost:5000/products/orders' , {
+  return axios.get(`${import.meta.env.VITE_BASE_URL}/products/orders` , {
     headers : headers 
   }).then(res=>res.data.orders).catch(err=> rejectWithValue(err));
 })
@@ -60,7 +60,7 @@ export const signup = createAsyncThunk(
       password: password,
     };
     return axios
-      .post("http://127.0.0.1:5000/auth/register", data)
+      .post(`${import.meta.env.VITE_BASE_URL}/auth/register`, data)
       .then((res) => res.data)
       .catch((err) => {
         return rejectWithValue(err);
@@ -72,7 +72,7 @@ export const signIn = createAsyncThunk(
   "signIn",
   ({ email, password, rememberMe }, { rejectWithValue }) => {
     const data = { email: email, password: password };
-    return axios.post("http://127.0.0.1:5000/auth/login", data).catch((err) => {
+    return axios.post(`${import.meta.env.VITE_BASE_URL}/auth/login`, data).catch((err) => {
       return rejectWithValue(err);
     });
   }

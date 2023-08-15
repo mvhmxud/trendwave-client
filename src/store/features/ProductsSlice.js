@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const host = "localhost";
 
 function shuffleArray(array) {
   const arr = array;
@@ -30,7 +29,7 @@ export const getProducts = createAsyncThunk(
   "getProducts",
   ({ page, cat }, { rejectWithValue }) => {
     return axios
-      .get(`http://${host}:5000/products`, {
+      .get(`${import.meta.env.VITE_BASE_URL}/products`, {
         params: {
           page: page,
           cat: cat,
@@ -47,7 +46,7 @@ export const getCategories = createAsyncThunk(
   "getCategories",
   (args, { rejectWithValue }) => {
     return axios
-      .get(`http://${host}:5000/products/category`)
+      .get(`${import.meta.env.VITE_BASE_URL}/products/category`)
       .then((res) => res.data.categories)
       .catch((err) => rejectWithValue(err));
   }
@@ -57,7 +56,7 @@ export const getProduct = createAsyncThunk(
   "getProduct",
   (id, { rejectWithValue }) => {
     return axios
-      .get(`http://${host}:5000/products/${id}`)
+      .get(`${import.meta.env.VITE_BASE_URL}/products/${id}`)
       .then((response) => response.data.product)
       .catch((err) => {
         return rejectWithValue(err);

@@ -14,7 +14,7 @@ export const goToCheckout = createAsyncThunk(
   "checkout",
   async ({ items, user }, { rejectWithValue }) => {
     const stripe = await getStripe();
-    const res = await fetch("http://localhost:5000/products/payment", {
+    const res = await fetch(`${import.meta.env.VITE_BASE_URL}/products/payment`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

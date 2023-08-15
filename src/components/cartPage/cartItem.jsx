@@ -16,7 +16,7 @@ const CartItem = ({_id , title , price ,image ,quantity}) => {
   },[quantity])
   return (
     <div className="lg:p-4 flex flex-col lg:flex-row  justify-between items-center w-full gap-3 lg:gap-0  border-b-[1px] dark:border-b-zinc-500">
-      <img src={'http://localhost:5000'+image} className="lg:w-[10%] rounded-md " />
+      <img src={import.meta.env.VITE_BASE_URL+image} className="lg:w-[10%] rounded-md " />
       <div className="flex flex-col lg:w-[40%]">
         <span>{title}</span>
         <span className="text-xs text-zinc-500">TrendWave</span>

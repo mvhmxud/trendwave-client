@@ -34,14 +34,14 @@ const Product = ({ cartHandler }) => {
       </div>}
       {!loading && product && <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row w-[80%] lg:w-[70%] justify-between">
         <div className="lg:w-[35%] flex flex-col items-center gap-5">
-          <img className="w-[100%] rounded-lg" src={src || `http://localhost:5000`+product?.images[0]} />
+          <img className="w-[100%] rounded-lg" src={src || import.meta.env.VITE_BASE_URL+product?.images[0]} />
           <div className="w-[100%] flex justify-around">
            {product?.images.map((image , index)=>{
             return  <img
             key={index}
             onMouseOver={(e) => setSrc(e.target.src)}
             className="w-[22%] hover:brightness-90 transition-all ease-in duration-100 rounded-lg cursor-pointer"
-            src={`http://localhost:5000`+image}
+            src={import.meta.env.VITE_BASE_URL+image}
           />
            })}
           </div>

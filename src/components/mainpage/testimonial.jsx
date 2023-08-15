@@ -3,8 +3,6 @@ import { AiFillStar } from "react-icons/ai";
 import test1 from '../../assets/imgs/test1.png';
 import test2 from '../../assets/imgs/test2.png';
 import test3 from '../../assets/imgs/test3.png';
-// Import Swiper styles
-import "swiper/css";
 
 const Testimonial = () => {
   return (
