@@ -9,10 +9,9 @@ import { getProduct } from "../store/features/ProductsSlice";
 import { ThreeDots } from "react-loader-spinner";
 import {TbError404} from 'react-icons/tb'
 import { addProduct } from "../store/features/CartSlice";
-const Product = ({ cartHandler }) => {
+const Product = () => {
   const {loading  , product , error} = useSelector(state=>state.products)
   const dispatch = useDispatch()
-  const navigate = useNavigate()
   const [src, setSrc] = useState(product?.images[0] || null);
   const { id } = useParams();
   
@@ -63,7 +62,7 @@ const Product = ({ cartHandler }) => {
         <TbError404 className="text-9xl"/>
         <h1>Product Not Found </h1>
       </div> }
-      <CartButton cartHandler={cartHandler} />
+      <CartButton  />
       <Footer />
     </div>
   );
