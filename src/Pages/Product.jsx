@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navigation from "../components/ui/navigation";
 import Footer from "../components/ui/footer";
 import CartButton from "../components/cartPage/CartButton";

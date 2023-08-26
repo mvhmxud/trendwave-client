@@ -1,5 +1,5 @@
 import Navigation from '../components/ui/navigation'
-import HeroBanner from '../components/mainPage/heroBanner'
+import HeroBanner from '../components/mainPage/heroBanner.jsx'
 import Brands from '../components/mainPage/brands'
 import NewArrivals from '../components/mainPage/newArrivals'
 import FollowUs from '../components/mainPage/FollowUs'
