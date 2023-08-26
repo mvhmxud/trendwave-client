@@ -90,7 +90,7 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 ## Live Preview
 
-Check out the live preview of TrendWave: [Live Preview](https://your-username.github.io/trendwave)
+Check out the live preview of TrendWave: [Live Preview](https://trendwave-mvhmxud.vercel.app/)
 
 ## License
 
