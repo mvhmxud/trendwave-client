@@ -28,6 +28,8 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 - **Extensive Icon Library:** React Icons provides a wide range of icons to enhance the visual representation of various features and actions.
 
+- **Payment Integration with Stripe:** Stripe is integrated for secure and convenient payment processing, ensuring a smooth checkout experience for customers.
+
 ## Tools Used
 
 - [React](https://reactjs.org/)
@@ -37,6 +39,7 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 - [Formik](https://formik.org/)
 - [Yup](https://github.com/jquense/yup)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [Stripe](https://stripe.com/)
 
 ## Screenshots
 
@@ -87,7 +90,7 @@ TrendWave is a modern e-commerce website built using ReactJS, designed to provid
 
 ## Live Preview
 
-Check out the live preview of TrendWave: [Live Preview](https://your-username.github.io/trendwave) <!-- Replace with your actual GitHub Pages link -->
+Check out the live preview of TrendWave: [Live Preview](https://your-username.github.io/trendwave)
 
 ## License
 
