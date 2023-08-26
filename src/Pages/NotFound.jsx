@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../components/common/Button'
-import { Link , useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import img1 from '../assets/imgs/4041.png'
 import img2 from '../assets/imgs/4042.png'
 
